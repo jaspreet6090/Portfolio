@@ -1,8 +1,31 @@
-body {
+body{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
   }
   
+  nav{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 80px;
+   background-color: #383838;
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0 23px;
+  }
+
+  .left-side{
+    font-size: 1.5rem;
+  }
  
   
