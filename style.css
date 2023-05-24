@@ -23,9 +23,34 @@ body{
     list-style: none;
     margin: 0 23px;
   }
+  nav ul li a {  
+    text-decoration: none;
+    color: white;
+  }
 
+  nav ul li a:hover {
+   color: #00BD95;
+  }
   .left-side{
+    color: #00BD95;
     font-size: 1.5rem;
   }
  
+  .hero-section{
+    display: flex;
+    /* justify-content: space-around; */
+  }
+
+  .text{
+    height: 500px;
+    width: 20vw;
+    background-color: aqua;
+
+  }
+
+  .image{
+    height: 500px;
+    width: 50vw;
+    background-color: rgb(0, 255, 170);
+  }
   
