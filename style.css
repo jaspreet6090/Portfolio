@@ -11,7 +11,8 @@ body{
    justify-content: space-around;
    align-items: center;
    height: 80px;
-   background-color: #383838;
+   background-color: #21272F;
+   
   }
 
   nav ul{
@@ -37,20 +38,30 @@ body{
   }
  
   .hero-section{
+    margin-top: 50px;
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
   }
 
   .text{
-    height: 500px;
-    width: 20vw;
-    background-color: aqua;
+    line-height: 30px;
+    margin-top: 50px;
+   margin-left: 100px;
+   justify-items: center;
+   
 
+  }
+ h2{
+    font-size: 50px ;
+  }
+
+ h1{
+    font-size: 63px ;
   }
 
   .image{
-    height: 500px;
-    width: 50vw;
-    background-color: rgb(0, 255, 170);
+    
+    
+   
   }
   
