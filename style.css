@@ -44,20 +44,16 @@ body{
   }
 
   .text{
-    line-height: 30px;
-    margin-top: 50px;
-   margin-left: 100px;
-   justify-items: center;
-   
+    
 
   }
- h2{
+ /* h2{
     font-size: 50px ;
   }
 
  h1{
     font-size: 63px ;
-  }
+  } */
 
   .image{
     
