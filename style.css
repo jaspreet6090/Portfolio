@@ -24,13 +24,18 @@ body{
     list-style: none;
     margin: 0 23px;
   }
+  .Home{
+    color: #00BD95 ;
+  }
   nav ul li a {  
     text-decoration: none;
     color: white;
   }
-
+  
   nav ul li a:hover {
    color: #00BD95;
+   font-size: 1.017rem;
+  
   }
   .left-side{
     color: #00BD95;
@@ -55,9 +60,5 @@ body{
     font-size: 63px ;
   } */
 
-  .image{
-    
-    
-   
-  }
+  
   
