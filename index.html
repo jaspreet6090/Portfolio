@@ -18,6 +18,13 @@
 
     <style>
    
+a{
+  text-decoration: none;
+  color: #009368;
+}
+a:hover{
+  color: white;
+}
 
       h1{
         color: #00BD95;
@@ -169,32 +176,109 @@ margin-top: 50px;
 text-align: center;
 }
 
-.project-card{
-  padding: 5px;
-  margin: auto;
+/* .project-card{
   position: relative;
-  width: 300px;
-  height: 300px;
-  background-color: #00BD95;
-  
-  
+  background-image: url(/Assets/Project-1.png);
+  background-repeat: no-repeat;
+  object-fit:fill;
+  border: 1px solid #00BD95;
+    box-shadow: 12px 17px 51px #171C23;
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00BD95; 
+   
 }
 
 .image {
   
-  object-fit:cover; 
-  opacity: 1;
-  display: block;
+ 
+}
+
+.text-card{
+  visibility: hidden ;
+ position: absolute;
+  opacity: 0;
+}
+
+.project-card:hover .text-card{
+  opacity: 0.7;
+  visibility: visible;
+  
+}
+.project-card:hover {
+
+opacity: 0.2;
+  border: 1px solid rgb(46, 49, 56);
+  transform: scale(1.05);
+}
+
+
+
+.project-card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.card-line{
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+} */
+
+
+.project-card {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-image {
   width: 100%;
-  height: 280px;
-  transition: .5s ease;
-  backface-visibility: hidden;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-name {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 
-.project-card:hover .image {
-  opacity: 0.3;
+
+.project-card:hover .card-image {
+  filter: blur(5px);
 }
+
+.project-card:hover .card-overlay {
+  opacity: 1;
+}
+
 
 
 </style>
@@ -288,11 +372,34 @@ text-align: center;
         <h2><strong>Projects</strong></h2>
     <div class="line"></div>
 
-    <div class="project-card">
-   <img class="image" src="/Assets/Project-1.png" alt="Project-1" height="250px" width="300px" > 
+
+    <!-- <div class="card-line">
+    <div class="project-card">  
+
+      <div class="text-card"><h3>Portfolio</h3>
+        <button class="btn"> View</button></div>
+      
   </div>  
- 
+    <div class="project-card">     
+      <h3>Portfolio</h3>
+      <button class="btn"> View</button>
+  </div>  
+    <div class="project-card">     
+      <h3>Portfolio</h3>
+      <button class="btn"> View</button>
+  </div>  
+</div>
+  </div> -->
+
+  <div class="project-card">
+    <img src="/Assets/Project-1.png" alt="Project Image" class="card-image">
+    <div class="card-overlay">
+      <h3 class="project-name">Project Name</h3>
+      <button><a href="#" >View Project</a></button>
+      
+    </div>
   </div>
+  
   
       </section>
       <div  style=" height: 100vh; " ></div>
