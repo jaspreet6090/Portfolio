@@ -27,7 +27,9 @@ hr {
   opacity: 50%;
 }
 
-
+.font-color{
+  color: #00bd95;
+}
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
@@ -138,6 +140,11 @@ button:hover::before {
   width: 100%;
 }
 
+.hero-section-btn{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 
 /* Hero Section- End */
 
