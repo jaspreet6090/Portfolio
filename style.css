@@ -146,16 +146,21 @@ button:hover::before {
   gap: 10px;
 }
 
+.hero-section-btn a{
+  padding: 5px;
+}
+
 /* Hero Section- End */
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Services Section- Start */
 .services {
+
   margin-top: 100px;
   padding-bottom: 70px;
   background-color: #171c23;
-  height: 80vh;
+  height: 500px;
 }
 .services-text {
   margin-left: 85px;
@@ -168,6 +173,7 @@ button:hover::before {
 }
 .services-card {
   display: flex;
+
   justify-content: space-around;
 }
 
@@ -249,8 +255,8 @@ button:hover::before {
 .project-card {
   position: relative;
 
-  width: 250px;
-  height: 200px;
+  width: 318px;
+  height: 237px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -292,7 +298,7 @@ button:hover::before {
 }
 
 .card-line {
-  margin: 0 100px 30px 100px;
+  margin: 0 200px 30px 200px;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -310,7 +316,7 @@ button:hover::before {
   padding-top: 30px;
   padding-bottom: 70px;
   background-color: #171c23;
-  height: 80vh;
+  height:500px;
 }
 .contact-form {
   margin: 20px;
@@ -406,7 +412,7 @@ footer .social-links {
   margin: 40px 0 40px 0;
 }
 footer .social-links a {
-  font-size: 25px;
+  font-size: 35px;
   display: inline-block;
   background: #009368;
   color: #fff;
@@ -418,13 +424,17 @@ footer .social-links a {
   width: 46px;
   height: 36px;
   transition: 0.3s;
-  background-image: url(/Assets/graphic.png);
+  
   object-fit: cover;
 }
 
 footer .social-links a:hover {
   border: 2px solid #009368;
 }
+
+
+
+
 
 /* Footer - End */
 
