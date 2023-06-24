@@ -302,6 +302,7 @@ button:hover::before {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  gap: 10px;
 }
 
 
