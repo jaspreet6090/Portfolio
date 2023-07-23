@@ -32,7 +32,7 @@
   }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 848px) {
     body{
       background-color: aqua;
     }
@@ -42,15 +42,82 @@
       flex-direction: column;
     }
 
+   
+    .services{
+
+      position: relative;
+      height: 1400px;
+      width: 100%;
+      margin-bottom: 100px ;
+    }
     .services-card{
+      position: absolute;
+      margin-top: 100px;
+      left: 50%;
+      right: 50%;
       height: 1000px;
       flex-direction: column;
-      gap: 20px;
+      gap: 60px;
       justify-content: center;
       align-items: center;
     }
   }
 
+  @media (max-width: 848px) {
+    body{
+      background-color: blue;
+    }
+   
+    nav{
+      padding: 10px;
+    }
+    nav span{
+      font-size: 15px;
+    }
+     .hero-section{
+      display: flex;
+
+      flex-direction: column-reverse;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile{
+      margin:0 ;
+    }
+    .text{
+      margin-top: 0;
+    }
+    .card-line{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+}
+@media (max-width: 520px) {
+  body{
+    background-color: rgb(109, 0, 0);
+  }
+  nav{
+    width: 500px;
+  }
+
+  .hero-section .text{
+    margin: 0px;
+
+    font-size: 1.5rem;
+  }
+
+  .hero-section img {
+  height: 450px;
+
+}
+
+.about-text{
+  font-size: 15px;
+  padding: 0 5px 0 5px;
+}
+}
 
   </style>
 
@@ -63,13 +130,20 @@
       <nav>
         <div class="left-side">Jaspreet's Portfolio</div>
         <div class="right-side">
+          <div class="burger-icon">
+            <span><a  class="Home" href="#">Home</a></span>
+            <span><a href="#about">About</a></span>
+            <span><a href="#services">Services</a></span>
+            <span><a href="#project">Projects</a></span>
+            <span><a href="#contact">Contact Me</a></span>
+        <!-- </div>
           <ul>
             <li><a  class="Home" href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#project">Projects</a></li>
             <li><a href="#contact">Contact Me</a></li>
-          </ul>
+          </ul> -->
         </div>
       </nav>
     </header>
@@ -261,12 +335,21 @@
       </footer>
     
 
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed('#element', {
         strings: ['Web Developer.', ' UI/UX Designer.' , 'Graphic Designer','Freelancer.' , '&amp;Upcoming Engineer✌️.'],
         typeSpeed: 50,
       });
+      document.addEventListener('DOMContentLoaded', function () {
+      var burgerIcon = document.querySelector('.burger-icon');
+      var navMenu = document.querySelector('.nav-menu'); // Replace this with your actual navigation menu class or ID
+
+      burgerIcon.addEventListener('click', function () {
+          navMenu.classList.toggle('show');
+      });
+  });
     </script>
   </body>
 </html>
