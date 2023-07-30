@@ -523,8 +523,6 @@ footer p {
 .card-line{
   justify-content: center;
   align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
   
 }
 
@@ -582,10 +580,6 @@ footer p {
 .project-card{
   height:100%;
   width: 300px;
-}
-.card-line{
-  flex-wrap: nowrap;
-  flex-direction: column;
 }
 }
 @media (max-width:320px){
