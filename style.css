@@ -523,6 +523,9 @@ footer p {
 .card-line{
   justify-content: center;
   align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  
 }
 
 
