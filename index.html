@@ -21,7 +21,7 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
 
     <style>
-@media (min-width : 1025px ){}
+
 /* 
 @media (max-width: 1200px) {
   body{
@@ -119,6 +119,116 @@
   padding: 0 5px 0 5px;
 }
 } */
+@media (max-width : 769px ) {
+ 
+  nav span{
+  font-size: 16px;
+ 
+}
+
+.left-side {
+  
+  font-size: 1.2rem;
+}
+
+  .profile .image{
+    height: 400px;
+  width: 350px;
+  margin-top: 10px;
+
+  }
+
+  .text{
+    font-size: 1.5rem;
+  }
+}
+.services{
+  height: 100%;
+}
+.services-card {
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-line{
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media  (max-width :640px){
+  nav{
+    gap: 60px;
+    padding: 0 10px 0 10px;
+  }
+  .right-side{
+    font-size: 14px;
+  }
+  .hero-section{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+  .text{
+    margin: 0 0 20px 0;
+  }
+  .about-text {
+    padding: 28px 61px 1px 61px;
+    line-height: 20px;
+}
+.card-line{
+  flex-wrap: nowrap;
+}
+
+}
+@media (max-width : 425px ){
+
+ 
+  nav span{
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+.image{
+  height: 336px;
+    width: 300px;
+}
+.left-side {
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+.hero-section{
+  flex-direction: column-reverse;
+}
+.text {
+    font-size: 1.2rem;
+}
+}
+@media (max-width:320px){
+  .right-side{
+    font-size: 10px;
+  }
+  .image{
+    height: 275px;
+    width: 240px;
+  }
+  .project-card{
+    height:100%;
+    width: 200px;
+  }
+  .card-line{
+  flex-wrap: nowrap;
+}
+
+  .about-text {
+    padding: 28px 30px 1px 30px;
+    line-height: 20px;
+}
+}
+
 
   </style>
 
@@ -148,7 +258,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <section class="hero-section">
         <div class="text">
           <h2>Hello, <span>I'm</span> </h2>
@@ -168,7 +278,7 @@
         </div>
        
         <div class="profile">
-          <img src="Assets/bgimg.png" alt="profile " />
+          <img class="image" src="Assets/bgimg.png" alt="profile " />
         </div>
         
       </section>
@@ -225,68 +335,67 @@
 
 
   <div class="card-line">
-    <div class="project-card">
-      <img src="/Assets/Project-1.png" alt="Project Image" class="card-image">
-      <div class="card-overlay">
-        <h3 class="project-name">Project Name</h3>
-       
-        <a href="#"><button>View</button></a>
-        
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="/Assets/Project-1.png" alt="Project Image" class="card-image">
-      <div class="card-overlay">
-        <h3 class="project-name">Project Name</h3>
-       
-        <a href="#"><button>View</button></a>
-        
-      </div>
-    </div>
+        <div class="project-card">
+          <img src="/Assets/Project-1.png" alt="Project Image" class="card-image">
+          <div class="card-overlay">
+            <h3 class="project-name">Project Name</h3>
+          
+            <a href="#"><button>View</button></a>
+            
+          </div>
+          </div>
+          <div class="project-card">
+            <img src="/Assets/Project-1.png" alt="Project Image" class="card-image">
+            <div class="card-overlay">
+              <h3 class="project-name">Project Name</h3>
+            
+              <a href="#"><button>View</button></a>
+              
+            </div>
+          </div>
 
-    <div class="project-card">
-      <img src="/Assets/Project-1.png" alt="Project Image" class="card-image">
-      <div class="card-overlay">
-        <h3 class="project-name">Project Name</h3>
-       
-        <a href="#"><button>View</button></a>
-        
-      </div>
-    </div>
+          <div class="project-card">
+                <img src="/Assets/Project-1.png" alt="Project Image" class="card-image">
+                <div class="card-overlay">
+                  <h3 class="project-name">Project Name</h3>
+                
+                  <a href="#"><button>View</button></a>
+                  
+                </div>
+          </div>
 
    
-  <!-- </div> -->
-  <!-- <div class="card-line"> -->
-    <div class="project-card">
-      <img src="/Assets/Project-1.png" alt="Project Image" class="card-image">
-      <div class="card-overlay">
-        <h3 class="project-name">Project Name</h3>
-       
-        <a href="#"><button>View</button></a>
-        
-      </div>
-    </div>
+  
+            <div class="project-card">
+              <img src="/Assets/Project-1.png" alt="Project Image" class="card-image">
+              <div class="card-overlay">
+                <h3 class="project-name">Project Name</h3>
+              
+                <a href="#"><button>View</button></a>
+                
+              </div>
+            </div>
 
-    <div class="project-card">
-      <img src="/Assets/Project-1.png" alt="Project Image" class="card-image">
-      <div class="card-overlay">
-        <h3 class="project-name">Project Name</h3>
-       
-        <a href="#"><button>View</button></a>
-        
-      </div>
-    </div>
+            <div class="project-card">
+              <img src="/Assets/Project-1.png" alt="Project Image" class="card-image">
+              <div class="card-overlay">
+                <h3 class="project-name">Project Name</h3>
+              
+                <a href="#"><button>View</button></a>
+                
+              </div>
+            </div>
 
-    <div class="project-card">
-      <img src="/Assets/Project-1.png" alt="Project Image" class="card-image">
-      <div class="card-overlay">
-        <h3 class="project-name">Project Name</h3>
-       
-        <a href="#"><button>View</button></a>
-        
+            <div class="project-card">
+              <img src="/Assets/Project-1.png" alt="Project Image" class="card-image">
+              <div class="card-overlay">
+                <h3 class="project-name">Project Name</h3>
+              
+                <a href="#"><button>View</button></a>
+                
+              </div>
+        </div>
       </div>
-    </div>
-  </div>
   
   
   

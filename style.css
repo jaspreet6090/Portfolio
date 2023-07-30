@@ -6,11 +6,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
-
-html{
+.container {
+  overflow: hidden;
+}
+html {
   scroll-behavior: smooth;
 }
 
@@ -25,7 +27,7 @@ a:hover {
 h1 {
   color: #00bd95;
 }
-.heading{
+.heading {
   font-size: 1.5rem;
   margin-top: 40px;
   margin-bottom: 10px;
@@ -40,14 +42,12 @@ hr {
   opacity: 50%;
 }
 
-.font-color{
+.font-color {
   color: #00bd95;
 }
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
-
 /* Nav Bar - Starts */
-
 
 nav {
   display: flex;
@@ -56,7 +56,7 @@ nav {
   height: 80px;
   background-color: #21272f;
 }
-nav span{
+nav span {
   font-size: 18px;
   margin-left: 10px;
   margin-right: 10px;
@@ -64,11 +64,12 @@ nav span{
 nav span a {
   text-decoration: none;
   color: white;
+  transition: 0.3s ease-out;
 }
 
 nav span a:hover {
   color: #00bd95;
-  font-size: 1.017rem;
+  transform: scale(1.5);
 }
 .Home {
   color: #00bd95;
@@ -89,7 +90,6 @@ nav span a:hover {
   justify-content: space-around;
 }
 
-
 .hero-secion {
   margin-top: 50px;
   display: flex;
@@ -101,7 +101,7 @@ nav span a:hover {
   line-height: 15px;
   margin: 110px 0px;
 }
-.sub-text{
+.sub-text {
   margin-bottom: 20px;
 }
 .image {
@@ -149,13 +149,13 @@ button:hover::before {
   width: 100%;
 }
 
-.hero-section-btn{
+.hero-section-btn {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
-.hero-section-btn a{
+.hero-section-btn a {
   padding: 5px;
 }
 
@@ -165,11 +165,10 @@ button:hover::before {
 
 /* Services Section- Start */
 .services {
-
   margin-top: 100px;
   padding-bottom: 70px;
   background-color: #171c23;
-  height: 550px;
+  height: 100%;
 }
 .services-text {
   margin-left: 85px;
@@ -240,13 +239,10 @@ button:hover::before {
   width: 120px;
 }
 
-
-
 .about-text {
   padding: 26px 98px 0px 98px;
-  line-height: 2;
+  line-height: 1.5;
 }
-
 
 /* About Section - End */
 
@@ -264,13 +260,21 @@ button:hover::before {
 
 .project-card {
   position: relative;
-
+  
   width: 318px;
   height: 237px;
   border-radius: 10px;
   overflow: hidden;
 }
 
+.card-line {
+  margin: 0 150px 30px 150px;
+  display: flex;
+
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 .card-image {
   width: 100%;
   height: 100%;
@@ -307,15 +311,6 @@ button:hover::before {
   opacity: 1;
 }
 
-.card-line {
-  margin: 0 200px 30px 200px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
 
 /* Project Section - End */
 
@@ -328,7 +323,7 @@ button:hover::before {
   padding-top: 30px;
   padding-bottom: 70px;
   background-color: #171c23;
-  height:550px;
+  height: 550px;
 }
 .contact-form {
   margin: 20px;
@@ -341,8 +336,7 @@ button:hover::before {
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  background-image: linear-gradient(45deg, #15caa3, 
-  #03cda1ce);
+  background-image: linear-gradient(45deg, #15caa3, #03cda1ce);
   border-radius: 2.5em;
   padding: 30px;
   width: 300px;
@@ -350,9 +344,8 @@ button:hover::before {
 }
 
 .form::before {
-  content: '';
-  background-image: linear-gradient(45deg, #00bd95, 
-  #a0ebdb);
+  content: "";
+  background-image: linear-gradient(45deg, #00bd95, #a0ebdb);
   height: 358px;
   width: 309px;
   position: absolute;
@@ -438,7 +431,6 @@ button:hover::before {
   color: white;
 }
 
-
 /* Contact Section - End*/
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -458,7 +450,7 @@ footer p {
   font-size: 12px;
   color: #666666;
 }
-.social-links{
+.social-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -466,21 +458,19 @@ footer p {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.social-links div{
-
+.social-links div {
   height: 50px;
   width: 50px;
   background-color: #009368;
   color: #ffffff;
   position: relative;
   border-radius: 50%;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 .social-links a {
   color: #ffffff;
@@ -488,12 +478,9 @@ footer p {
   object-fit: cover;
 }
 
-.social-links div:hover{
+.social-links div:hover {
   transform: scale(1.2);
 }
-
-
-
 
 /* Footer - End */
 
