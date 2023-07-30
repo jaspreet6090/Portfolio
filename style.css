@@ -272,7 +272,7 @@ button:hover::before {
   flex-direction: row;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
+   justify-content: center;
   align-items: center;
 }
 
@@ -549,6 +549,7 @@ footer p {
 }
 .card-line{
   flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 }
@@ -574,6 +575,11 @@ footer p {
 .text {
     font-size: 1.2rem;
 }
+
+.project-card{
+  height:100%;
+  width: 300px;
+}
 }
 @media (max-width:320px){
   .right-side{
@@ -587,7 +593,9 @@ footer p {
     height:100%;
     width: 200px;
   }
-
+.card-line{
+  flex-wrap: nowrap;
+}
   .about-text {
     padding: 28px 30px 1px 30px;
     line-height: 20px;
