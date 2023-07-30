@@ -261,8 +261,8 @@ button:hover::before {
 .project-card {
   position: relative;
   
-  width: 318px;
-  height: 237px;
+  width: 400px;
+  height: 300px;
   border-radius: 10px;
   overflow: hidden;
 }
