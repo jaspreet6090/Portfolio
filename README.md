@@ -39,7 +39,7 @@ This repository contains the source code for my personal portfolio website. The 
 
 3. Open the `index.html` file in your preferred web browser to view the portfolio website.
 
-## Deployment:
+## Deployment :
 
 You can deploy the portfolio website using various platforms like GitHub Pages, Netlify, Vercel, or your own web hosting service. Make sure to configure the deployment settings to serve the `index.html` as the starting point.
 
